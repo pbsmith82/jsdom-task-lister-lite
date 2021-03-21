@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tasklist = document.getElementById("list")
     counter += 1
     tasklist.innerHTML += `<li> ${task.value} <button id="delete${counter}">x</button></li>`
-      tasklist.addEventListener("click", function(event) {
+    // debugger
+    tasklist.addEventListener("click", function(event) {
     event.toElement.parentElement.outerHTML = ""
     counter -= 1
     
